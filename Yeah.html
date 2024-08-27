@@ -1,0 +1,81 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Welcome Nova Zhang</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--x = input("Enter your name:")-->
+<!--        print(x + 'is an idiot')-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Welcome</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<h1>Welcome, Nova Zhang</h1>-->
+
+<!--&lt;!&ndash; Input field &ndash;&gt;-->
+<!--<label for="userInput">Enter your name!:</label>-->
+<!--<input type="text" id="userInput" placeholder="Type here...">-->
+
+<!--&lt;!&ndash; Button to trigger response &ndash;&gt;-->
+<!--<button onclick="giveResponse()">Let's See</button>-->
+
+<!--&lt;!&ndash; Area to display the response &ndash;&gt;-->
+<!--<p id="responseText"></p>-->
+
+<!--&lt;!&ndash; Simple JavaScript to handle the response &ndash;&gt;-->
+<!--<script>-->
+<!--    function giveResponse() {-->
+<!--        // Get the input value (not really needed here since the response is fixed)-->
+<!--        var userInput = document.getElementById("userInput").value;-->
+
+<!--        // Set the response text-->
+<!--        document.getElementById("responseText").innerText = "Thank you for your input!";-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+//////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Page</title>
+</head>
+<body>
+
+<h1>I can see thru your soul...</h1>
+
+<!-- Input field for the name -->
+<label for="nameInput">Your Name:</label>
+<input type="text" id="nameInput" placeholder="Enter your name">
+
+<!-- Button to trigger the greeting -->
+<button onclick="sayHello()">Let's See...</button>
+
+<!-- Area to display the greeting -->
+<p id="greetingText"></p>
+
+<!-- JavaScript to handle the greeting -->
+<script>
+    function sayHello() {
+        // Get the name input from the user
+        var name = document.getElementById("nameInput").value;
+
+        // Display the greeting message
+        document.getElementById("greetingText").innerText = name + " is an idiot!!!";
+    }
+</script>
+
+</body>
+</html>
