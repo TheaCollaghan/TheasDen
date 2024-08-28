@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Who's there?</h1>
+
+    <form id="nameForm">
+        <input type="text" id="nameInput" placeholder="Your Name" required>
+        <button type="submit">Oh it's you...</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <script>
+        document.getElementById("nameForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("nameInput").value;
+            const resultDiv = document.getElementById("result");
+
+            resultDiv.innerHTML = `<h2>Our superstar ${name}! HBD mi amiga!!!</h2>
+                                   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDNjOWF1bjFybHBpdWdtMnhvcWtyeHNycXN2OTNsbWtiOHA3emlobSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/g5R9dok94mrIvplmZd/giphy.gif" alt="Happy Birthday Image">
+                                   <p><a href="https://m.tb.cn/h.gM0MjQShuuW1mbh?tk=rJMt35YloZb MF6563">Check your gift!</a></p>`;
+        });
+    </script>
+
+</body>
+</html>
